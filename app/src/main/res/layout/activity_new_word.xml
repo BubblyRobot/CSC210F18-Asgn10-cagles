@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground"
+    tools:context=".NewEditWordActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+
+        <EditText
+            android:id="@+id/edit_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_view_style"
+            android:hint="@string/hint_word"
+            android:inputType="textAutoComplete" />
+
+        <EditText
+            android:id="@+id/edit_definition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/text_view_style"
+            android:hint="@string/hint_word_description"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_style"
+            android:text="@string/button_save" />
+
+    </LinearLayout>
